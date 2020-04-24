@@ -1,3 +1,9 @@
+import * as Sentry from '@sentry/node';
+// or using CommonJS
+// const Sentry = require('@sentry/node');
+
+Sentry.init({ dsn: 'https://0b91060d33854ce892cba9c12fe60a31@o382923.ingest.sentry.io/5212531' });
+
 const MM = require('ms-manager');  
 let config = require(`./config.json`) || {};  
 
