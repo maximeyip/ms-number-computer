@@ -18,13 +18,13 @@ MM.init(config, (err, serviceInfo) => {
         /**
         * TODO: Uncomment when operationnal
         **/
-        // const computer = require('./computer');
-        // try {
-        //     const result = computer.add(bdy.a, bdy.b);
-        //     msg.reply({ result });
-        // } catch (err) {
-        //     console.error(err);
-        //     return msg.replyErr(err);
-        // }
+        const computer = require('./computer');
+        try {
+             const result = computer.add(bdy.a, bdy.b);
+             msg.reply({ result });
+         } catch (err) {
+             console.error(err);
+             return msg.replyErr(err);
+         }
     });
 });
